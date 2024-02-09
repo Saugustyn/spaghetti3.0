@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import HomePage from './pages/HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import AlbumPage from './pages/AlbumPage/AlbumPage';
+import PostPage from './pages/PostPage/PostPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/albums/:albumId" element={<AlbumPage />} />
+        <Route path="/posts/:postId" element={<PostPage />} />
       </Routes>
     </Router>
   );
