@@ -1,1 +1,68 @@
- 
+.album-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .add-photo-form {
+    margin: 0 auto 30px;
+    max-width: 500px;
+  }
+  
+  .add-photo-form input[type="text"],
+  .add-photo-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .add-photo-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-photo-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .photos-grid {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+  }
+  
+  .photo-item {
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .photo-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  .delete-button {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff3b3b;
+  }
