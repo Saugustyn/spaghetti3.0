@@ -61,13 +61,17 @@
   }
   
   .post-preview {
+    width: 100%;
     background-color: white;
     border: 1px solid #ccd0d5;
     border-radius: 8px;
     padding: 15px;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    max-width: 800px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
+  
+  
   
   .post-preview h3 {
     color: #333;

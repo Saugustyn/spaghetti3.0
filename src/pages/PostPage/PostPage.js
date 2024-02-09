@@ -30,6 +30,7 @@ const PostPage = () => {
       method: 'POST',
       body: JSON.stringify(commentToPost),
       headers: {
+        'Content-type': 'application/json; charset=UTF-8',
       },
     })
     .then(response => response.json())
@@ -64,9 +65,11 @@ const PostPage = () => {
             <p>{comment.body}</p>
             <p>{comment.email}</p>
             {comment.email === loggedInUserEmail && (
-              <button onClick={() => handleDeleteComment(comment.id)} className="delete-comment">
-                Usuń
-              </button>
+              <div style={{marginTop: "10px"}}>
+                <button onClick={() => handleDeleteComment(comment.id)} className="delete-comment">
+                  Usuń
+                </button>
+              </div>
             )}
           </div>
         ))}
@@ -81,7 +84,7 @@ const PostPage = () => {
         </form>
       </div>
     </div>
-  );
+  );  
   
 };
 
